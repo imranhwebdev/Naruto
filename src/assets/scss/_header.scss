@@ -1,0 +1,27 @@
+.heading {
+    padding: 70px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    @include sm {
+        padding-top: 35px;
+    }
+    & .site__logo img{
+        max-width: 623px;
+    }
+
+    @include mmd{
+        padding: 50px 0;
+        & .site__logo img{
+            max-width: 300px;
+        }
+    }
+
+    @include sm{
+        & .site__logo img{
+            max-width: 196px;
+        }
+    }
+}

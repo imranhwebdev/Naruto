@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+body {
+    font-family: 'Jockey One', sans-serif;
+    font-weight: 400;
+    line-height: 1.6em;
+    @include font-32;
+    background-color: #17151E;
+    color: $white;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+   transition: all .3 ease-in-out;
+}
+
+@media(min-width:1440px){
+    .container {
+        max-width: 1320px;
+     }
+       
+}
+.container {
+   max-width: 1200px;
+}
+
+.boxed__btn{
+    color: $FB0201;
+    @include font-40;
+    line-height: 160%; 
+    max-width: 550px;
+    border-radius: 16px;
+    border: 2px solid $FDC6A4;
+    background: $FFEE9D;
+    box-shadow: 0px 11px 19px 0px #790C0C, 9px 9px 55px 0px rgba(254, 150, 92, 0.55) inset, -9px -9px 55px 0px rgba(255, 126, 54, 0.55) inset;
+    display: inline-block;
+    padding:26px 63px;
+    margin: 0 auto;
+    transition: all .3s ease-in-out;
+    @include sm{
+        padding:12px 64px;
+
+    }
+}
+
+
+.boxed__btn:hover{
+    color: $FFEE9D;
+    border: 2px solid $FB0201;
+    background: $FB0201;
+}
+

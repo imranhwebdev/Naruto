@@ -11,6 +11,7 @@
         padding-bottom:30px;
     }
     &-content {
+        text-align: center;
         & span {
             color: $FB0201;
 
@@ -86,7 +87,7 @@
             border: 1.491px solid #FFAF94;
             background: rgba(214, 157, 128, 0.21);
             backdrop-filter: blur(1.7886364459991455px);
-            padding: 12px 32px; 
+            padding: 12px 24px; 
             display: inline-block;
             margin-top: 48px;
             padding-top: 8px;
@@ -96,7 +97,7 @@
                 padding-top: 8px;
             }
             & input{
-                min-width: 288px;
+                min-width: 357px;
                 background: none;
                 border: 0;
                 color: #B0B0B0;
@@ -114,6 +115,7 @@
                 margin-left: 16px;
                 color: #B0B0B0;
                 transition: .3s;
+                cursor: pointer;
                 & span.coppied svg {
                     fill: #fff;
                 }

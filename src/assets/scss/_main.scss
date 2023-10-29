@@ -4,6 +4,8 @@
     padding-top: 70px;
     padding-bottom: 152px;
     z-index: 1;
+    max-width: 810px;
+    margin:0 auto;
     @include sm {
         padding-top: 215px;
         padding-bottom:30px;
@@ -24,27 +26,26 @@
             margin-top: 50px;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            max-width: 700px;
+            max-width: 455px;
             margin: 0 auto;
             margin-top: 56px;
-            gap: 40px;
+            gap: 24px;
             @include sm{
             gap: 16px;
             margin-top: 40px;
             max-width: 316px;
             }
                 & a{
-                    border-radius: 16px;
-                    border: 2.5px solid #FFAF94;
-                    background: rgba(214, 157, 128, 0.02);
-                    backdrop-filter: blur(7.5px); 
+                    border-radius: 8px;
+                    border: 1.491px solid #FDB297;
+                    background: rgba(214, 157, 128, 0.21);
+                    backdrop-filter: blur(1.7886364459991455px);
                     display: inline-block;
-                    padding:16px 64px;
+                    padding:12px 32px;
                     color: $D0C8C8;
                     @include font-16;
                     transition: all .3s ease;
-                    max-width: 330px;
-                    display: inline-block;
+                    max-width: 215px;
                     & img{
                         width: 24px;
                         margin-right: 24px;
@@ -70,8 +71,8 @@
                     }
                 }
                 & a:hover{
-                    border: 2.5px solid $FB0201;
-                    color: $FB0201
+                    color: #fff;
+                    border-color: #fff;
                 }
         }
         & .boxed__btn{
@@ -81,19 +82,19 @@
             }
         }
         & .copytoclipboard{
-            border-radius: 16px;
-            border: 2.5px solid #56483F;
-            background: rgba(214, 157, 128, 0.02);
-            backdrop-filter: blur(7.5px);
-            padding: 26px 64px; 
+            border-radius: 8px;
+            border: 1.491px solid #FFAF94;
+            background: rgba(214, 157, 128, 0.21);
+            backdrop-filter: blur(1.7886364459991455px);
+            padding: 12px 32px; 
             display: inline-block;
-            margin-top: 80px;
+            margin-top: 48px;
             @include sm{
              display: none;
 
             }
             & input{
-                min-width: 505px;
+                min-width: 288px;
                 background: none;
                 border: 0;
                 color: #B0B0B0;
@@ -104,7 +105,7 @@
             & button {
                 background: transparent;
                 border: 0;
-                margin-left: 24px;
+                margin-left: 16px;
                 color: #B0B0B0;
                 transition: .3s;
                 & span.coppied svg {

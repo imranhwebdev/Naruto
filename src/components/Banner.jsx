@@ -1,5 +1,6 @@
 import {React, useState} from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import Snowfall from 'react-snowfall';
 import herosociallogo1 from '../assets/img/etherscan.svg';
 import herosociallogo2 from '../assets/img/dextools.svg';
 import herosociallogo3 from '../assets/img/telegram.svg';
@@ -21,6 +22,9 @@ export default function Banner(){
     };
     return(
         <div className="banner">
+            <div className="snowfall-container">
+                <Snowfall snowflakeCount={300} />
+            </div>
             <Container>
                 <Row className='text-center'>
                     <Col>

@@ -92,6 +92,8 @@
             padding-top: 8px;
             @include sm{
                 margin-top: 24px;
+                padding: 12px 30px; 
+                padding-top: 8px;
             }
             & input{
                 min-width: 288px;

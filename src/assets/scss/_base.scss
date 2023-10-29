@@ -4,14 +4,16 @@ body {
     font-family: 'Jockey One', sans-serif;
     font-weight: 400;
     line-height: 1.6em;
-    @include font-32;
+    @include font-24;
     color: $white;
     position: relative;
     background-image: url("../img/naruto__bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    &::before{
+    z-index: 1;
+    overflow: hidden;
+    &::after{
         position: absolute;
         content: "";
         left: 0;
@@ -20,9 +22,6 @@ body {
         height: 372.454px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 15.33%, #0C0A09 100%);
         z-index: -1;
-    }
-    @include sm {
-        background-image: url("../img/naruto__responsive__bg.jpg");
     }
 }
 
@@ -59,27 +58,25 @@ a {
 
 .boxed__btn{
     color: $FB0201;
-    @include font-40;
-    line-height: 160%; 
-    max-width: 550px;
+    @include font-24;
+    line-height: 160%;
     border-radius: 16px;
-    border: 2px solid $FDC6A4;
-    background: $FFEE9D;
-    box-shadow: 0px 11px 19px 0px #790C0C, 9px 9px 55px 0px rgba(254, 150, 92, 0.55) inset, -9px -9px 55px 0px rgba(255, 126, 54, 0.55) inset;
+    border: 1.192px solid #FFF;
+    background: #FFEE9D;
+    box-shadow: 0px 6.55833px 35px 0px #FF7E49, 5.36591px 5.36591px 32.79167px 0px rgba(254, 150, 92, 0.55) inset, -5.36591px -5.36591px 32.79167px 0px rgba(255, 126, 54, 0.55) inset;
     display: inline-block;
-    padding:26px 63px;
+    padding:16px 104px;
     margin: 0 auto;
     transition: all .3s ease-in-out;
     @include sm{
         padding:12px 64px;
-
     }
 }
 
 
 .boxed__btn:hover{
     color: $FFEE9D;
-    border: 2px solid $FB0201;
-    background: $FB0201;
+    border: 1.192px solid $FFEE9D;
+    background: $FFEE9D;
 }
 

@@ -1,20 +1,12 @@
 /* Banner CSS */
 
 .banner {
-    padding-top: 1078px;
-    padding-bottom: 212px;
+    padding-top: 70px;
+    padding-bottom: 152px;
     z-index: 1;
-    @include lg {
-        padding-top: 768px;
-        padding-bottom:120px;
-    }
-    @include mmd {
-        padding-top: 576px;
-        padding-bottom:100px;
-    }
     @include sm {
-        padding-top: 384px;
-        padding-bottom:80px;
+        padding-top: 215px;
+        padding-bottom:30px;
     }
     &-content {
         & span {
@@ -48,15 +40,16 @@
                     backdrop-filter: blur(7.5px); 
                     display: inline-block;
                     padding:16px 64px;
-                    color: $white;
-                    @include font-28;
-                    line-height: 1.6em;
+                    color: $D0C8C8;
+                    @include font-16;
                     transition: all .3s ease;
                     max-width: 330px;
                     display: inline-block;
                     & img{
-                        width: 40px;
+                        width: 24px;
                         margin-right: 24px;
+                        height: 24px;
+                        object-fit: contain;
                         @include sm{
                            width: 18px;
                            margin-right: 10px;
@@ -104,15 +97,8 @@
                 background: none;
                 border: 0;
                 color: #B0B0B0;
-                @include font-28;
+                @include font-16;
                 outline: none;
-            }
-            & input::focus{
-                outline: none !important;
-                border-color:transparent !important;
-            }
-            & input:hover {
-                caret-color: transparent;
             }
   
             & button {

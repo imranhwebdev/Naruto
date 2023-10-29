@@ -58,8 +58,10 @@ a {
     padding:16px 104px;
     margin: 0 auto;
     transition: all .3s ease-in-out;
+    text-transform: uppercase;
     @include sm{
         padding:12px 64px;
+        border-radius: 8px;
     }
 }
 

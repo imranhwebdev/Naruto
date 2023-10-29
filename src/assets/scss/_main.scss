@@ -48,7 +48,7 @@
                     max-width: 215px;
                     & img{
                         width: 24px;
-                        margin-right: 24px;
+                        margin-right: 16px;
                         height: 24px;
                         object-fit: contain;
                         @include sm{
@@ -58,7 +58,7 @@
                     }
                     @include sm{
                         font-size: 16px;
-                        padding:14px 28px;
+                        padding:8px 22px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -90,8 +90,7 @@
             display: inline-block;
             margin-top: 48px;
             @include sm{
-             display: none;
-
+                margin-top: 24px;
             }
             & input{
                 min-width: 288px;
@@ -100,6 +99,10 @@
                 color: #B0B0B0;
                 @include font-16;
                 outline: none;
+                @include sm{
+                    min-width: 220px;
+                    font-size: 12px;
+                }
             }
   
             & button {
@@ -113,6 +116,10 @@
                 }
                 & span.coppied {
                     position: absolute;
+                }
+                @include sm{
+                    margin-left: 5px;
+
                 }
             }
             & button:hover {

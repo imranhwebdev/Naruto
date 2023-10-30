@@ -1,5 +1,5 @@
 .heading {
-    text-align: center;
+    text-align: center !important;
     margin-top: 72px;
     @include sm {
         margin-top: 35px;
@@ -20,4 +20,7 @@
             max-width: 196px;
         }
     }
+}
+.header__logo{
+    text-align: center !important;
 }

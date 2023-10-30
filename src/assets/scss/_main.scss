@@ -41,7 +41,9 @@
                     border: 1.491px solid #FDB297;
                     background: rgba(214, 157, 128, 0.21);
                     backdrop-filter: blur(1.7886364459991455px);
-                    display: inline-block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     padding:12px 32px;
                     color: $D0C8C8;
                     @include font-16;
